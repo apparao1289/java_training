@@ -7,7 +7,7 @@ public class SumOfTwoElementsEqualToGivenSum {
 	public static void main(String[] args) {
 		// sum of two elements equals to given sum in a array.
 		int a[] = { 1, 3, 4, 6, 7, 8 }; // sum =10 possible pairs: (3,7)(4,6)
-		sumOfTwoNumber(a, 11);
+		sumOfTwoNumber(a, 10);
 	}
 
 	public static void sumOfTwoNumber(int a[], int sum) {
