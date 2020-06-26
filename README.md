@@ -6,3 +6,5 @@ This project having following information.
 3. Operators
 4. Flow controls 
 5. Loops  
+6. Arrays
+7. Object oriented programming concepts ( object , class, inheritance, Encapsulation, abstraction, polymorphism)
