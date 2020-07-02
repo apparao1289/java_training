@@ -1,9 +1,15 @@
 package com.test.Polymorphism;
 
-public class MethodOverloadingTest {
+/**
+ * Compile time Polymorphism example
+ * 
+ * @author apparao
+ *
+ */
+public class CompileTimePolymorphismTest {
 
 	public static void main(String[] args) {
-		// compile time Polymorphism example
+		// we can achieve compile time Polymorphism  using method overloading.
 		Area a = new Area();
 		
 		// Area of circle
