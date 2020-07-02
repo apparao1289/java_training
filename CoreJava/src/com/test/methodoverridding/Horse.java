@@ -3,10 +3,12 @@ package com.test.methodoverridding;
 public class Horse extends Animal {
 
 	/**
-	 * super class access specifier child class possible access specifier
+	 * super class access specifier            child class overridden method possible access specifier
 	 * =============================================================================
-	 * public public protected protected,public default default,protected,public
-	 * private ---
+	 * public                                 public
+	 * protected                              protected,public 
+	 * default                                default,protected,public
+	 * private                                 ---
 	 */
 
 	public void eat() {
