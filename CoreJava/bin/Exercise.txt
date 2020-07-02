@@ -1,0 +1,108 @@
+1. Print the prime number between given intervals.
+i/p : 2, 10
+o/p: 2,3,5,7
+
+2. Print the below pattern
+        *
+     *  *
+   * *  *
+ * * *  *
+
+3. print the pascal triangle
+
+4.perfect number: if the sum of its postive divisors excluding the number itself is equal to that number.
+Ex: n= 28
+possible divisors: 1,2,4,7,14
+sum of divisors = 1+2+4+7+14 = 28
+
+Arrays:
+
+1. Write a program to find the sum and product of all elements of an array.
+
+2.  Write a Java program to find sum of even and odd number separately
+
+3. Find largest and smallest elements of an array.
+   public static void largestAndSmallest(int[] numbers) {
+		int largest = Integer.MIN_VALUE;
+		int smallest = Integer.MAX_VALUE;
+		for (int number : numbers) {
+			if (number > largest) {
+				largest = number;
+			} else if (number < smallest) {
+				smallest = number;
+			}
+		}
+	}
+
+4. Find second largest number in a given array
+5. Find the second smallest number in a given array
+6. Delete given element from array
+7. Practice sorting algorithams.( selection sort, bobble sort, insertion sort, merge sort, quick sort)
+8. Print the matrix in spiral form
+   
+   package com.test.array;
+
+public class SprialMatrix {
+	
+    public static void main(String[] args) 
+    { 
+        int row = 3; 
+        int column = 6; 
+        int a[][] = { { 1, 2, 3, 4, 5, 6 }, 
+                      { 7, 8, 9, 3, 0, 1 }, 
+                      { 1, 4, 5, 6, 7, 8 } }; 
+        
+        spiralFormPrint(row, column, a); 
+    } 
+    
+	/**
+	 * This method print matrix in spiral form 
+	 * 
+	 * @param m
+	 * @param n
+	 * @param a
+	 */
+   private static void spiralFormPrint(int m, int n, int a[][]) 
+    { 
+        int i, k = 0, l = 0; 
+        /*  k - starting row index 
+        m - ending row index 
+        l - starting column index 
+        n - ending column index 
+        i - iterator 
+        */
+  
+        while (k < m && l < n) { 
+            // Print the first row from the remaining rows 
+            for (i = l; i < n; ++i) { 
+                System.out.print(a[k][i] + " "); 
+            } 
+            k++; 
+  
+            // Print the last column from the remaining columns 
+            for (i = k; i < m; ++i) { 
+                System.out.print(a[i][n - 1] + " "); 
+            } 
+            n--; 
+  
+            // Print the last row from the remaining rows */ 
+            if (k < m) { 
+                for (i = n - 1; i >= l; --i) { 
+                    System.out.print(a[m - 1][i] + " "); 
+                } 
+                m--; 
+            } 
+  
+            // Print the first column from the remaining columns */ 
+            if (l < n) { 
+                for (i = m - 1; i >= k; --i) { 
+                    System.out.print(a[i][l] + " "); 
+                } 
+                l++; 
+            } 
+        } 
+    } 
+  
+}
+
+ 
