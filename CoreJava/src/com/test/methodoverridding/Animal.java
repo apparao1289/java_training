@@ -1,7 +1,7 @@
 package com.test.methodoverridding;
 
 public class Animal {
-
+	
 	public String name = "Animal name";
 
 	public void eat() {
