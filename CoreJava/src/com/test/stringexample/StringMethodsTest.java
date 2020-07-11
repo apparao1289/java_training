@@ -34,6 +34,9 @@ public class StringMethodsTest {
 	   String s6 = s2.replace("Welcome", "Bye");
 	   System.out.println("replace with strings:"+s6);
 	   
+	   System.out.println(s6.contains("to"));
+	   
+	   System.out.println("Check string is empty or not::"+s6.isEmpty());
 	   
 	}
 
