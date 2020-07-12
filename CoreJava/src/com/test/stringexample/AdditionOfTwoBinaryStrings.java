@@ -3,13 +3,16 @@ package com.test.stringexample;
 public class AdditionOfTwoBinaryStrings {
 
 	public static void main(String[] args) {
-		System.out.println(addTwoBinaryNUmbers("100", "111"));
+		System.out.println(addTwoBinaryNUmbers("110", "011"));
 	}
 
 	private static String addTwoBinaryNUmbers(String s1, String s2) {
 		StringBuilder sb = new StringBuilder();
 		int sum = 0;
 		int carry = 0;
+		if (s1.length() != s2.length()) {
+			return null;
+		}
 		char[] c1 = s1.toCharArray();
 		char[] c2 = s2.toCharArray();
 		for (int i = c1.length - 1; i >= 0; i--) {
