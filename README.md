@@ -9,7 +9,6 @@ This project having following information.
 6. Arrays
 7. Object oriented programming concepts ( object , class, inheritance, Encapsulation, abstraction, polymorphism)
 8. Access Modifiers
-
 9 Abstract class and interfaces
 10. String class
 11. Object class
