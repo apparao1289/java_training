@@ -105,4 +105,14 @@ public class SprialMatrix {
   
 }
 
+=======================================================
+1. Advantages of multi threading
+2. Different ways to create Threads and which option is better
+3. difference between sleep() and wait()
+4. different ways of code to synchronize
+5. Give a example of creating the deadlock and how to resolve dead lock
+6. Explain producer and consumer model ( Inter thread process communication)
+7. Thread life cycle
+8. difference between sleep and yield.
+
  
