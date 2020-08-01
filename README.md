@@ -15,3 +15,6 @@ This project having following information.
 12. Wrapper classes
 13. Recursion
 14. Exception Handling
+15. Multi Threading
+16. Collection Framework
+17. Files and IO
