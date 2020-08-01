@@ -1,6 +1,6 @@
 package com.test.collections;
 
-public class Employee implements Comparable<Employee> {
+public class Emp implements Comparable<Emp>{
 
 	private Integer id;
 
@@ -12,7 +12,7 @@ public class Employee implements Comparable<Employee> {
 
 	private String designation;
 
-	public Employee(Integer id, String firstName, String lastName, Double salary, String designation) {
+	public Emp(Integer id, String firstName, String lastName, Double salary, String designation) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -62,41 +62,6 @@ public class Employee implements Comparable<Employee> {
 	}
 
 	@Override
-	public int compareTo(Employee emp) {
-		
-		// Sorting salary field in ascending order.
-		if (salary > emp.salary) {
-			return 1;
-		} else if (salary < emp.salary) {
-			return -1;
-		} else {
-			return 0;
-		}
-		
-		// Sorting salary field in decending order.
-		/*if (salary < emp.salary) {
-			return 1;
-		} else if (salary > emp.salary) {
-			return -1;
-		} else {
-			return 0;
-		}*/
-		
-		// sorting based on string type
-		//return firstName.compareTo(emp.firstName);
-		
-		// sorting based on INteger field.
-		/*if (id > emp.id) {
-			return 1;
-		} else if (id < emp.id) {
-			return -1;
-		} else {
-			return 0;
-		}*/
-
-	}
-
-	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -116,7 +81,7 @@ public class Employee implements Comparable<Employee> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Employee other = (Employee) obj;
+		Emp other = (Emp) obj;
 		if (designation == null) {
 			if (other.designation != null)
 				return false;
@@ -144,6 +109,16 @@ public class Employee implements Comparable<Employee> {
 			return false;
 		return true;
 	}
-	
+
+	@Override
+	public int compareTo(Emp e) {
+		if (salary > e.getSalary()) {
+			return 1;
+		} else if (salary < e.getSalary()) {
+			return -1;
+		} else {
+			return 0;
+		}
+	}
 
 }
